@@ -1,6 +1,7 @@
 using CrewWeb.VehixPlatform.API.Monitoring.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using CrewWeb.VehixPlatform.API.IAM.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+using CrewWeb.VehixPlatform.API.Sale.Infrastructure.Persistence.EFC.Configurations;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,6 +25,9 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
         
         // Apply configurations for the Identity and Access Management bounded context
         builder.ApplyIamConfiguration();
+
+        // Apply configurations for the Sale bounded context
+        builder.ApplySaleConfiguration();
 
         // Use snake case naming convention for the database
         builder.UseSnakeCaseNamingConvention();
