@@ -24,4 +24,9 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
         // Use snake case naming convention for the database
         builder.UseSnakeCaseNamingConvention();
     }
+    // Método para crear la base de datos y aplicar migraciones
+    public void EnsureDatabaseCreatedOrMigrated()
+    {
+        this.Database.Migrate();
+    }
 }
