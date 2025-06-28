@@ -1,5 +1,4 @@
 using Cortex.Mediator.Commands;
-using Mitsui.Sale.Application.Internals.DTOs;
 using Mitsui.Sale.Domain.Model.Enumerations;
 
 namespace Mitsui.Sale.Application.Internals.Commands;
@@ -7,10 +6,7 @@ namespace Mitsui.Sale.Application.Internals.Commands;
 /// <summary>
 /// Command to create a bill.
 /// </summary>
-
 public class CreateBillCommand : ICommand
-=======
-public class CreateBillCommand : ICommand<BillResource>
 {
     /// <summary>Customer name.</summary>
     public string Customer { get; init; } = string.Empty;
