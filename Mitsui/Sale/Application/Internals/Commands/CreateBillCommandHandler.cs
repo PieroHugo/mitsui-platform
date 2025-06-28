@@ -2,6 +2,7 @@ using Cortex.Mediator.Commands;
 using Mitsui.Sale.Application.Internals.DTOs;
 using Mitsui.Sale.Domain.Model.Entities;
 using Mitsui.Sale.Domain.Model.ValueObjects;
+using Mitsui.Sale.Domain.Model.Enumerations;
 using Mitsui.Sale.Domain.Repositories;
 using Mitsui.Shared.Domain.Repositories;
 
@@ -10,10 +11,7 @@ namespace Mitsui.Sale.Application.Internals.Commands;
 /// <summary>
 /// Handles bill creation.
 /// </summary>
-
 public class CreateBillCommandHandler : ICommandHandler<CreateBillCommand>
-public class CreateBillCommandHandler : ICommandHandler<CreateBillCommand, BillResource>
-
 {
     private readonly IBillRepository _billRepository;
     private readonly IUnitOfWork _unitOfWork;
@@ -34,7 +32,7 @@ public class CreateBillCommandHandler : ICommandHandler<CreateBillCommand, BillR
             throw new InvalidOperationException("Amount must be greater than zero");
         if (command.Emission < DateTime.UtcNow.Date)
             throw new InvalidOperationException("Emission date cannot be in the past");
-        if (!Enum.IsDefined(typeof(Enumerations.EService), command.ServiceId))
+        if (!Enum.IsDefined(typeof(EService), command.ServiceId))
             throw new InvalidOperationException("Invalid service identifier");
 
         var invoice = new Invoice { SerialNumber = command.SerialNumber, SequentialNumber = command.SequentialNumber };
@@ -66,9 +64,9 @@ public class CreateBillCommandHandler : ICommandHandler<CreateBillCommand, BillR
             Amount = bill.Amount
         };
     }
+
     async Task ICommandHandler<CreateBillCommand>.Handle(CreateBillCommand command, CancellationToken cancellationToken)
     {
         await Handle(command, cancellationToken);
     }
-
 }
