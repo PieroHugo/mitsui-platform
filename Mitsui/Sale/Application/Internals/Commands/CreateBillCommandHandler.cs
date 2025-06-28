@@ -1,11 +1,11 @@
 using Cortex.Mediator.Commands;
-using CrewWeb.VehixPlatform.API.Sale.Application.Internals.DTOs;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Entities;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.ValueObjects;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Repositories;
-using CrewWeb.VehixPlatform.API.Shared.Domain.Repositories;
+using Mitsui.Sale.Application.Internals.DTOs;
+using Mitsui.Sale.Domain.Model.Entities;
+using Mitsui.Sale.Domain.Model.ValueObjects;
+using Mitsui.Sale.Domain.Repositories;
+using Mitsui.Shared.Domain.Repositories;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Application.Internals.Commands;
+namespace Mitsui.Sale.Application.Internals.Commands;
 
 /// <summary>
 /// Handles bill creation.

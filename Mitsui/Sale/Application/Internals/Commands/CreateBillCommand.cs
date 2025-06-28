@@ -1,8 +1,8 @@
 using Cortex.Mediator.Commands;
-using CrewWeb.VehixPlatform.API.Sale.Application.Internals.DTOs;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Enumerations;
+using Mitsui.Sale.Application.Internals.DTOs;
+using Mitsui.Sale.Domain.Model.Enumerations;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Application.Internals.Commands;
+namespace Mitsui.Sale.Application.Internals.Commands;
 
 /// <summary>
 /// Command to create a bill.

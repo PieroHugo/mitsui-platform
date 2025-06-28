@@ -1,7 +1,7 @@
-using CrewWeb.VehixPlatform.API.Shared.Domain.Repositories;
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+using Mitsui.Shared.Domain.Repositories;
+using Mitsui.Shared.Infrastructure.Persistence.EFC.Configuration;
 
-namespace CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace Mitsui.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 public class UnitOfWork(AppDbContext context): IUnitOfWork
 {

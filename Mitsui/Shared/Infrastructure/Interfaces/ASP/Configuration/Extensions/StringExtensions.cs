@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace CrewWeb.VehixPlatform.API.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
+namespace Mitsui.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
 
 public static partial class StringExtensions
 {    

@@ -1,9 +1,9 @@
-using CrewWeb.VehixPlatform.API.Shared.Domain.Repositories;
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+using Mitsui.Shared.Domain.Repositories;
+using Mitsui.Shared.Infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace Mitsui.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 /// <summary>
 ///     Base repository for all repositories
