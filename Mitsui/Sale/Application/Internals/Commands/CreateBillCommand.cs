@@ -7,6 +7,9 @@ namespace Mitsui.Sale.Application.Internals.Commands;
 /// <summary>
 /// Command to create a bill.
 /// </summary>
+
+public class CreateBillCommand : ICommand
+=======
 public class CreateBillCommand : ICommand<BillResource>
 {
     /// <summary>Customer name.</summary>
