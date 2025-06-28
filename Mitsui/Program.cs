@@ -1,11 +1,11 @@
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
-using CrewWeb.VehixPlatform.API.Shared.Domain.Repositories;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Repositories;
-using CrewWeb.VehixPlatform.API.Sale.Infrastructure.Persistence.EFC.Repositories;
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Interfaces.ASP.Configuration;
+using Mitsui.Shared.Infrastructure.Persistence.EFC.Configuration;
+using Mitsui.Shared.Infrastructure.Persistence.EFC.Repositories;
+using Mitsui.Shared.Domain.Repositories;
+using Mitsui.Sale.Domain.Repositories;
+using Mitsui.Sale.Infrastructure.Persistence.EFC.Repositories;
+using Mitsui.Shared.Infrastructure.Interfaces.ASP.Configuration;
 using Microsoft.EntityFrameworkCore;
-using CrewWeb.VehixPlatform.API.Sale.Application.Internals.Commands;
+using Mitsui.Sale.Application.Internals.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IBillRepository, BillRepository>();
-builder.Services.AddScoped<Sale.Application.Internals.Commands.CreateBillCommandHandler>();
+builder.Services.AddScoped<CreateBillCommandHandler>();
 
 var app = builder.Build();
 

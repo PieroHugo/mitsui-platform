@@ -1,4 +1,4 @@
-namespace CrewWeb.VehixPlatform.API.Sale.Domain.Model.Enumerations;
+namespace Mitsui.Sale.Domain.Model.Enumerations;
 
 /// <summary>
 /// Service types available for bills.

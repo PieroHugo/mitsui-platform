@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Infrastructure.Persistence.EFC.Configurations;
+namespace Mitsui.Sale.Infrastructure.Persistence.EFC.Configurations;
 
 /// <summary>
 /// Model builder extensions for the Sale bounded context.

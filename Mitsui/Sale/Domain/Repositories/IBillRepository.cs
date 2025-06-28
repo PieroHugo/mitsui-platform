@@ -1,8 +1,8 @@
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Entities;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.ValueObjects;
-using CrewWeb.VehixPlatform.API.Shared.Domain.Repositories;
+using Mitsui.Sale.Domain.Model.Entities;
+using Mitsui.Sale.Domain.Model.ValueObjects;
+using Mitsui.Shared.Domain.Repositories;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Domain.Repositories;
+namespace Mitsui.Sale.Domain.Repositories;
 
 /// <summary>
 /// Repository contract for bills.

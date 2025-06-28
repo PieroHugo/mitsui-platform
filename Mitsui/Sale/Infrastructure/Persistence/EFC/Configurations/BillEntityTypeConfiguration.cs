@@ -1,9 +1,9 @@
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Entities;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.ValueObjects;
+using Mitsui.Sale.Domain.Model.Entities;
+using Mitsui.Sale.Domain.Model.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Infrastructure.Persistence.EFC.Configurations;
+namespace Mitsui.Sale.Infrastructure.Persistence.EFC.Configurations;
 
 /// <summary>
 /// Entity Framework configuration for <see cref="Bill"/>.

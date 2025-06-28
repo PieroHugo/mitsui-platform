@@ -1,11 +1,9 @@
-using CrewWeb.VehixPlatform.API.Monitoring.Infrastructure.Persistence.EFC.Configuration.Extensions;
-using CrewWeb.VehixPlatform.API.IAM.Infrastructure.Persistence.EFC.Configuration.Extensions;
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
-using CrewWeb.VehixPlatform.API.Sale.Infrastructure.Persistence.EFC.Configurations;
+using Mitsui.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+using Mitsui.Sale.Infrastructure.Persistence.EFC.Configurations;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-namespace CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+namespace Mitsui.Shared.Infrastructure.Persistence.EFC.Configuration;
 
 public class AppDbContext(DbContextOptions options) : DbContext(options)
 {
@@ -20,12 +18,6 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
         base.OnModelCreating(builder);
         
-        // Apply configurations for the Monitoring bounded context
-        builder.ApplyMonitoringConfiguration();
-        
-        // Apply configurations for the Identity and Access Management bounded context
-        builder.ApplyIamConfiguration();
-
         // Apply configurations for the Sale bounded context
         builder.ApplySaleConfiguration();
 

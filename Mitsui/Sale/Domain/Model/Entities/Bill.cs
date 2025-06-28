@@ -1,7 +1,7 @@
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Enumerations;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.ValueObjects;
+using Mitsui.Sale.Domain.Model.Enumerations;
+using Mitsui.Sale.Domain.Model.ValueObjects;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Domain.Model.Entities;
+namespace Mitsui.Sale.Domain.Model.Entities;
 
 /// <summary>
 /// Bill aggregate root.

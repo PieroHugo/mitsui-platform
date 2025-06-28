@@ -1,7 +1,7 @@
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Entities;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Enumerations;
+using Mitsui.Sale.Domain.Model.Entities;
+using Mitsui.Sale.Domain.Model.Enumerations;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Application.Internals.DTOs;
+namespace Mitsui.Sale.Application.Internals.DTOs;
 
 /// <summary>
 /// Resource returned in API responses.

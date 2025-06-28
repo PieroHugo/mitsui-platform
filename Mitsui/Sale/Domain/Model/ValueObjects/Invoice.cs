@@ -1,4 +1,4 @@
-namespace CrewWeb.VehixPlatform.API.Sale.Domain.Model.ValueObjects;
+namespace Mitsui.Sale.Domain.Model.ValueObjects;
 
 /// <summary>
 /// Invoice number composed by serial and sequential parts.

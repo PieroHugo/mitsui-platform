@@ -1,11 +1,11 @@
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.Entities;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Model.ValueObjects;
-using CrewWeb.VehixPlatform.API.Sale.Domain.Repositories;
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
+using Mitsui.Sale.Domain.Model.Entities;
+using Mitsui.Sale.Domain.Model.ValueObjects;
+using Mitsui.Sale.Domain.Repositories;
+using Mitsui.Shared.Infrastructure.Persistence.EFC.Configuration;
+using Mitsui.Shared.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Infrastructure.Persistence.EFC.Repositories;
+namespace Mitsui.Sale.Infrastructure.Persistence.EFC.Repositories;
 
 /// <summary>
 /// Entity Framework repository for bills.

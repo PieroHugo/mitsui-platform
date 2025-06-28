@@ -1,4 +1,4 @@
-namespace CrewWeb.VehixPlatform.API.Shared.Domain.Repositories;
+namespace Mitsui.Shared.Domain.Repositories;
 
 /// <summary>
 ///     Base repository interface for all repositories

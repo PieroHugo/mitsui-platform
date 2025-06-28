@@ -1,8 +1,8 @@
-using CrewWeb.VehixPlatform.API.Sale.Application.Internals.Commands;
-using CrewWeb.VehixPlatform.API.Sale.Application.Internals.DTOs;
+using Mitsui.Sale.Application.Internals.Commands;
+using Mitsui.Sale.Application.Internals.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CrewWeb.VehixPlatform.API.Sale.Interfaces.REST;
+namespace Mitsui.Sale.Interfaces.REST;
 
 /// <summary>
 /// Bills endpoint exposing creation operation.

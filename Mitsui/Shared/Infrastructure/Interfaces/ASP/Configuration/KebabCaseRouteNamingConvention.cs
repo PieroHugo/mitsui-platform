@@ -1,7 +1,7 @@
-using CrewWeb.VehixPlatform.API.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
+using Mitsui.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace CrewWeb.VehixPlatform.API.Shared.Infrastructure.Interfaces.ASP.Configuration;
+namespace Mitsui.Shared.Infrastructure.Interfaces.ASP.Configuration;
 
 public class KebabCaseRouteNamingConvention : IControllerModelConvention
 {
