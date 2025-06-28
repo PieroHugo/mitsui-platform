@@ -10,10 +10,7 @@ namespace Mitsui.Sale.Application.Internals.Commands;
 /// <summary>
 /// Handles bill creation.
 /// </summary>
-
 public class CreateBillCommandHandler : ICommandHandler<CreateBillCommand>
-public class CreateBillCommandHandler : ICommandHandler<CreateBillCommand, BillResource>
-
 {
     private readonly IBillRepository _billRepository;
     private readonly IUnitOfWork _unitOfWork;
@@ -66,9 +63,9 @@ public class CreateBillCommandHandler : ICommandHandler<CreateBillCommand, BillR
             Amount = bill.Amount
         };
     }
+
     async Task ICommandHandler<CreateBillCommand>.Handle(CreateBillCommand command, CancellationToken cancellationToken)
     {
         await Handle(command, cancellationToken);
     }
-
 }
